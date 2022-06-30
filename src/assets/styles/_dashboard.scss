@@ -1,0 +1,67 @@
+.postTable {
+    border-collapse: collapse;
+    width: 100%;
+    & td, #postTable th {
+        padding: 10px;
+      }
+      & tr:nth-child(even){background-color: #f2f2f2;}
+      & tr:hover {background-color: #ddd;}
+      & th {
+        padding: 12px;
+        text-align: left;
+        background-color: var(--secondary-bg);
+        color: white;
+      }
+
+  }
+
+  .form{
+    &__input-item{
+      padding: 10px;
+    }
+    &__input-field{
+      padding: 10px;
+      border-radius: 4px;
+      width: 100%;
+    }
+    &__input-field:focus{
+      border-color: var(--secondary-bg);
+      border-width: 3px;
+      color: var(--secondary-bg);
+
+    }
+
+  }
+  
+  .form__input-field--file {
+  width: 100%;
+}
+.form__input-field--file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.form__input-field--file::before {
+  content: 'Select image';
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.form__input-field--file:hover::before {
+  border-color: black;
+}
+.form__input-field--file:active {
+  outline: 0;
+}
+.form__input-field--file:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}

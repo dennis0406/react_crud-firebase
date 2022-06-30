@@ -1,0 +1,29 @@
+.nav{    
+    &--top ul{
+        width: 100%;
+        display: flex;
+        list-style: none;        
+        @include border--bt;
+    }
+    &__item{
+        background-color: var(--secondary-bg);
+        border-right: 2px solid var(--third-bg);
+        margin-bottom: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+    &__item--link{
+        text-decoration: none;
+        color: var(--text-cl);
+        text-transform: uppercase;
+        padding: 10px 20px;
+        font-weight: 500;
+        display: inline-block;
+    }
+}
+
+.title{
+    color: var(--cl-title);
+    text-transform: uppercase;
+    text-align: center;
+    @include border--bt;
+}

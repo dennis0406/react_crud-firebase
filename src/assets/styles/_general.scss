@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+*{
+    font-family: 'PT Mono', monospace;    
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+    font-size: var(--fz-text);
+    box-sizing: border-box;
+}
+
+.bg-body{
+    background-color: var(--primary-bg);
+}
+
+.categoryName{
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    &--primary{
+        background-color: var(--secondary-bg);
+    }
+    &--danger{
+        background-color: var(--cl-title);
+    }
+}
